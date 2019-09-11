@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 body{
     margin: 0;
@@ -8,7 +8,7 @@ body{
 
 *{
     box-sizing: border-box;
-    font-family: "Roboto" !important;
+    font-family: "Muli" !important;
 }
 
 .header{
@@ -115,6 +115,9 @@ body{
     margin: 70px 0px;
     padding-bottom: 10px; 
 }
+.carousel::-webkit-scrollbar{
+    display: none;
+}
 
 .carouse-item{
     width:  200px;
@@ -137,9 +140,13 @@ body{
 .carousel__container:hover  .carouse-item {
     opacity: 0.3;
 }
-.carousel__container:hover .carouse-item:hover{
+.carousel__container:hover .carouse-item:hover {
     transform: scale(1.5);
     opacity: 1;
+}
+
+.carousel__container:hover .carouse-item:hover > .carousel-item__details{
+    display: flex;
 }
 
 .carousel-item__img{
@@ -158,8 +165,12 @@ body{
     right: 0;
     bottom: 0;
     left: 0;
+    display: none;
+    color: #fff;
+    align-items: flex-end;
 }
+
 .carousel-item__details--icon{
-    widows: 25px;
+    width: 25px;
     height: 25px;
 }

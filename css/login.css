@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+body{
+    margin: 0;
+}
+
+*{
+    /* box-sizing: border-box; */
+    font-family: "Muli" !important;
+}
+
+.header{
+    height: 80px;
+    background-color: #21c08b;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    border:0;
+}
+
+.header__img{
+    width: 200px;
+}
+
+.login{
+    background: linear-gradient(#21c08b, #ab88ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh -200px);
+}
+
+.login__container {
+    background: rgba(255,255,255, .1);
+    border-radius: 40px;
+    border: 2px solid #fff;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container--form label{
+    font-size: 14px;
+}
+
+.login__container--remember-me{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login__container--remember-me a{
+    color:white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login__container--remember-me a:hover{
+    text-decoration: underline;
+}
+
+.login__container--social-media > div{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.login__container--social-media > div > img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.login__container--register{
+    font-size: 14px;
+}
+
+.login__container--register a{
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login__container--register a:hover{
+    text-decoration: underline;
+}
+
+.input{
+    background: transparent;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid #fff;
+    font-family: "Muli";
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 14px;
+    caret-color: #fff;
+}
+
+input:focus{
+    color: #fff;
+}
+
+.input::placeholder{
+    color:#fff;
+}
+
+.button{
+    background: rgba(255,255,255,0.3);
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "Muli";
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    height: 50px;
+    letter-spacing: 1.5px;
+    outline: none;
+
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width:100%;
+    background: #ab88ff;
+}
+
+.footer a{
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left:30px;
+    text-decoration: none; 
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px){
+    .login__container{
+        background: transparent;
+        border: none;
+        padding: 0;
+        width: 100%;
+    }
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
